@@ -1,0 +1,100 @@
+.navbar-brand {
+    font-family: 'Caesar Dressing';
+    font-size: 200% !important;
+}
+
+
+.tituloRaft {
+    color: #97DBCF;
+}
+
+.tituloMinho {
+    color: white;
+}
+
+.tituloAdmin {
+    color: white;
+}
+
+@media (max-width: 992px){
+.navbar-custom .navbar-brand {
+    width: 350px;
+    overflow: hidden;
+}
+}
+
+.content-row .content-row-title {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 22px;
+    text-shadow: 2px 2px 2px rgba(255,255,255,1);
+}
+
+body {
+    min-width: 280px;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+    font-size: 14px;
+    /* background-color: #8ACAC0; */
+    background-image: url(https://cdn.pixabay.com/photo/2012/08/03/01/26/fraser-river-53638_1280.jpg);
+    overflow-x: hidden;
+}
+
+
+.panel-body {
+    padding: 18px;
+    background-color:#FAFAFA;
+}
+
+
+.site-footer {
+    background-color:#434A54;
+}
+
+
+
+
+.col-md-6{
+    color: #F0F0F0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+}
+
+.copyright-clearfix{
+    color:  #F0F0F0;
+}
+
+.container{
+    color: #264d73;
+}
+
+/* https://cdn.pixabay.com/photo/2015/08/11/04/03/rafting-883523_1280.jpg */
+
+
+
+.events {
+    color:#434A54;
+}
+
+.page-header{
+    color:#434A54;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+
+}
+
+.content-row-title{
+    color:#434A54;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+
+}
+
+.form-horizontal{
+    color:#434A54;
+}
+
+/* Roboto */
+
+.events-heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+
+}

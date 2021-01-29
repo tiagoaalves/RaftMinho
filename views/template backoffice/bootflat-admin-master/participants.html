@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RaftMinho-Admin</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon_16.ico"/>
+    <link rel="bookmark" href="favicon_16.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+
+    <!-- site css -->
+    <link rel="stylesheet" href="dist/css/table.css">
+    <link rel="stylesheet" href="dist/css/site.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="dist/css/eu.css">
+    
+  </head>
+  <body>
+    <!--nav-->
+    <nav role="navigation" class="navbar navbar-custom">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button data-target="#bs-content-row-navbar-collapse-5" data-toggle="collapse" class="navbar-toggle" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                        <a href="#" class="navbar-brand"><span class="tituloRaft">RAFT</span><span class="tituloMinho">MINHO •</span><span class="tituloAdmin"> ADMINISTRADOR</span></a>
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div id="bs-content-row-navbar-collapse-5" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              
+               <li class="dropdown">
+                          
+                       
+            
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <b class="glyphicon glyphicon-user"></b></a>
+            <ul role="menu" class="dropdown-menu">
+              <li class="dropdown-header">Perfil </li>
+
+              <li class="divider"></li>
+              <li class="active"><a href= "editPerfil.html" >Dados</a></li>
+              
+            </ul>
+          </li>
+              
+              
+              
+              
+              
+              
+              
+              
+              <li class="active"></li>
+              <li class="active"></li>
+              <!-- <li class="disabled"><a href="#">Link</a></li> -->
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <b class="glyphicon glyphicon-align-justify"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li class="dropdown-header">Opções</li>
+                  
+                  <li class="divider"></li>
+                  <li class="active"><a href="https://mail.google.com/mail/u/0/#inbox">Conta Email</a></li>
+                  <li class="divider"></li>
+                  <li class="disabled"><a href="home.html">Sair</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <!--header-->
+    <div class="container-fluid">
+    <!--documents-->
+        <div class="row row-offcanvas row-offcanvas-left">
+          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+            <ul class="list-group panel">
+                
+                
+                <li class="list-group-item"><a href="backoffice.html"><i class="glyphicon glyphicon-home"></i>Painel de Controlo </a></li>
+                <li class="list-group-item"><a href="timeline.html" ><i class="glyphicon glyphicon-indent-left"></i>Agenda</a></li>
+                <li class="list-group-item"><a href="activities.html" ><i class="glyphicon glyphicon-minus"></i>Atividades</a></li>
+                <li class="list-group-item"><a href="manager.html"><i class="glyphicon glyphicon-list-alt"></i>Gestores de Espaços</a></li>
+                <li class="list-group-item"><a href="participants.html"><i class="glyphicon glyphicon-th-list"></i>Participantes </a></li>
+                <li class="list-group-item"><a href="payments.html"><i class="glyphicon glyphicon-bell"></i>Pagamentos</li>
+                
+                
+                
+                
+                
+                
+                
+               
+                
+              </ul>
+          </div>
+          <div class="col-xs-12 col-sm-9 content">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Conteúdo</h3>
+              </div>
+              <div class="panel-body">
+                
+                
+
+                <div class="content-row">
+
+                  <div class="col-md-12">
+                    
+                    
+                    <h2 class="content-row-title">Participantes</h2>
+
+                    
+
+                    <h1 id="tables" class="page-header"> Lista de Participantes</h1>
+
+                  
+                    <body class="large-screen">
+                      
+                      
+                      
+                      
+      
+                    <table>
+                    	<thead>
+                    	<tr class="table-headers">
+                        <th>Nome</th>
+                        <th>Localidade</th>
+                        <th>Email</th>
+                        <th>Data de nascimento</th>
+                        <th>Pontuação</th>
+                    	</tr>
+                    	</thead>
+                    	<tbody id="table-headers" >
+                        <tr>
+                          
+                        </tr>
+                        
+                          
+                    	</tbody>
+                    </table>                
+                      
+  <!--                    
+  <div class="wrap">
+    <div class="btn-toolbar buttons">
+     
+    </div>
+    <div class="table-wrapper">
+      <table class="table-responsive card-list-table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Localidade</th>
+            <th>Email</th>
+            <th>Idade</th>
+            <th>Pontuação</th>
+            
+          </tr>
+        </thead >
+        
+        
+        <tbody id="bodyTable">
+          <tr>
+            
+          </tr>
+          <tr>
+           
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+           --> 
+            <!--        
+                    <div class="bs-example">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>Username</th>
+                            <th>Telefone</th>
+                            <th>Password</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Marco</td>
+                            <td>marc01</td>
+                            <td>912345678</td>
+                            <td>marc01@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>João</td>
+                            <td>joa02</td>
+                            <td>921234567</td>
+                            <td>joaoo@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Lara</td>
+                            <td>laraa3</td>
+                            <td>931234567</td>
+                            <td>laraa3@gmail.com</td>
+                            
+                          </tr>
+                          <tr>
+                              <td>4</td>
+                              <td>....</td>
+                              <td>....</td>
+                              <td>.......</td>
+                              <td>.........</td>  
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>.......</td>
+                                <td>......</td>
+                                <td>.........</td>
+                                <td>.......</td>
+                              </tr> 
+                        </tbody>
+                      </table>
+                    </div>
+                  -->
+
+
+                    
+
+
+                    
+                    
+
+                    
+                  </div>
+                </div>
+              </div><!-- panel body -->
+            </div>
+        </div><!-- content -->
+      </div>
+    </div>
+    <!--footer-->
+    <div class="site-footer">
+      <div class="container">
+        
+        
+        <div class="row">
+          <div class="col-md-6">
+            <h3> Contacta-nos</h3>
+            <ul>
+               <li>Envia Password: <span class="connect">raftminho1920@gmail.com</span></li>
+              <li>
+                <a title="Twitter" href="https://twitter.com" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe121"></i></a>
+                <a title="Facebook" href="https://www.facebook.com" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10b"></i></a>
+                <a title="Google+" href="https://plus.google.com/" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe110"></i></a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <hr class="dashed" />
+        <div class="copyright-clearfix">
+          <p><b>RaftMinho</b></p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+    <script type="text/javascript" src="/dist/js/participantes.controller.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+    <script type="text/javascript" src="dist/js/table.js"></script>
+    <script type="text/javascript" src="dist/js/site.min.js"></script>
+    
+</html>

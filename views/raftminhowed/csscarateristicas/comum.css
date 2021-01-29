@@ -1,0 +1,18 @@
+p{
+	color: #000000;
+    font-family: 'Basic'!important;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+h2 {
+	color: #1f5673 !important;
+	font-family: 'Basic';
+}
+#h2{
+	color: #ffffff !important;
+}
+#h22{
+	font-size: 130%;
+}

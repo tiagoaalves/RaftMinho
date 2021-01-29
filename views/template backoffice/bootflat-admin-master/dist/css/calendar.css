@@ -1,0 +1,198 @@
+/*
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+}
+.datepicker {
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+  overflow: hidden;
+}
+.datepicker .datepicker-header {
+  height: 250px;
+  background-image: url(https://cdn.pixabay.com/photo/2019/01/27/02/48/adventure-3957359_1280.jpg);
+  background-position: center center;
+  background-size: 100%;
+}
+.datepicker .ui-datepicker-inline {
+  padding: 30px;
+}
+.datepicker .ui-datepicker-header {
+  text-align: center;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-prev, .datepicker .ui-datepicker-header .ui-datepicker-next {
+  display: inline;
+  float: left;
+  cursor: pointer;
+  font-size: 1.4em;
+  padding: 0 10px;
+  margin-top: -10px;
+  color: #ccc;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-next {
+  float: right;
+}
+.datepicker .ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+.datepicker .ui-datepicker-calendar thead {
+  color: #ccc;
+}
+.datepicker .ui-datepicker-calendar tr th, .datepicker .ui-datepicker-calendar tr td {
+  padding-bottom: 0.5em;
+}
+.datepicker .ui-datepicker-calendar a {
+  color: #444;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.datepicker .ui-datepicker-calendar .ui-state-highlight {
+  border-color: #d24d57;
+  color: #d24d57;
+}
+
+*/
+
+/* OUTRO CALENDARIO */
+
+/*
+@media (max-width: 550px) {
+  .big-container {
+    display: none;
+  }
+}
+@media (min-width: 550px) {
+  .small-container {
+    display: none;
+  }
+}
+/* Responsive iFrame */
+/*
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+*/
+
+/* CALENDARIO NOVO */
+
+
+@media screen and ( min-width: 60px ) {
+  
+/*.container-showcase {*/
+/*  max-width: 400px;*/
+/*}  */
+  
+  
+  
+
+.calendar-day {
+	 width: 100px;
+	 min-width: 100px;
+	 max-width: 700px;
+	 height: 80px;
+}
+ .calendar-table {
+	 margin: 0 auto;
+	 width: 100px;
+}
+ .selected {
+	 background-color: #eee;
+}
+ .outside .date {
+	 color: #ccc;
+}
+ .timetitle {
+	 white-space: nowrap;
+	 text-align: right;
+}
+ .event {
+	 border-top: 1px solid #b2dba1;
+	 border-bottom: 1px solid #b2dba1;
+	 background-image: linear-gradient(to bottom,#dff0d8 0px,#c8e5bc 100%);
+	 background-repeat: repeat-x;
+	 color: #3c763d;
+	 border-width: 1px;
+	 font-size: .75em;
+	 padding: 0 .75em;
+	 line-height: 2em;
+	 white-space: nowrap;
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+	 margin-bottom: 1px;
+}
+ .event.begin {
+	 border-left: 1px solid #b2dba1;
+	 border-top-left-radius: 4px;
+	 border-bottom-left-radius: 4px;
+}
+ .event.end {
+	 border-right: 1px solid #b2dba1;
+	 border-top-right-radius: 4px;
+	 border-bottom-right-radius: 4px;
+}
+ .event.all-day {
+	 border-top: 1px solid #9acfea;
+	 border-bottom: 1px solid #9acfea;
+	 background-image: linear-gradient(to bottom,#d9edf7 0px,#b9def0 100%);
+	 background-repeat: repeat-x;
+	 color: #31708f;
+	 border-width: 1px;
+}
+ .event.all-day.begin {
+	 border-left: 1px solid #9acfea;
+	 border-top-left-radius: 4px;
+	 border-bottom-left-radius: 4px;
+}
+ .event.all-day.end {
+	 border-right: 1px solid #9acfea;
+	 border-top-right-radius: 4px;
+	 border-bottom-right-radius: 4px;
+}
+ .event.clear {
+	 background: none;
+	 border: 1px solid transparent;
+}
+ .table-tight .cell-styles {
+	 padding-left: 0;
+	 padding-right: 0;
+}
+ .table-tight-vert .cell-styles {
+	 padding-top: 0;
+	 padding-bottom: 0;
+}
+ 
+} 

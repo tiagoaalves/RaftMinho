@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RaftMinho-Admin</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon_16.ico"/>
+    <link rel="bookmark" href="favicon_16.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+
+    <!-- site css -->
+    <link rel="stylesheet" href="dist/css/table.css">
+    <link rel="stylesheet" href="dist/css/site.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="dist/css/eu.css">
+    <link rel="stylesheet" href="dist/css/saldo.css">
+    
+  </head>
+  <body>
+    <!--nav-->
+    <nav role="navigation" class="navbar navbar-custom">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button data-target="#bs-content-row-navbar-collapse-5" data-toggle="collapse" class="navbar-toggle" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                        <a href="#" class="navbar-brand"><span class="tituloRaft">RAFT</span><span class="tituloMinho">MINHO •</span><span class="tituloAdmin"> ADMINISTRADOR</span></a>
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div id="bs-content-row-navbar-collapse-5" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              
+              <li class="dropdown">
+                          
+                       
+            
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <b class="glyphicon glyphicon-user"></b></a>
+            <ul role="menu" class="dropdown-menu">
+              <li class="dropdown-header">Perfil </li>
+
+              <li class="divider"></li>
+              <li class="active"><a href= "editPerfil.html" >Dados</a></li>
+              
+            </ul>
+          </li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <li class="active"></li>
+              <li class="active"></li>
+              <!-- <li class="disabled"><a href="#">Link</a></li> -->
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <b class="glyphicon glyphicon-align-justify"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li class="dropdown-header">Opções</li>
+                  
+                  <li class="divider"></li>
+                  <li class="active"><a href="https://mail.google.com/mail/u/0/#inbox">Conta Email</a></li>
+                  <li class="divider"></li>
+                  <li class="disabled"><a href="home.html">Sair</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <!--header-->
+    <div class="container-fluid">
+    <!--documents-->
+        <div class="row row-offcanvas row-offcanvas-left">
+          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+            <ul class="list-group panel">
+                
+                
+                <li class="list-group-item"><a href="backoffice.html"><i class="glyphicon glyphicon-home"></i>Painel de Controlo </a></li>
+                <li class="list-group-item"><a href="timeline.html" ><i class="glyphicon glyphicon-indent-left"></i>Agenda</a></li>
+                <li class="list-group-item"><a href="activities.html" ><i class="glyphicon glyphicon-minus"></i>Atividades</a></li>
+                <li class="list-group-item"><a href="manager.html"><i class="glyphicon glyphicon-list-alt"></i>Gestores de Espaços</a></li>
+                <li class="list-group-item"><a href="participants.html"><i class="glyphicon glyphicon-th-list"></i>Participantes </a></li>
+                <li class="list-group-item"><a href="payments.html"><i class="glyphicon glyphicon-bell"></i>Pagamentos</li>
+                
+              </ul>
+          </div>
+          
+          <div class="col-xs-12 col-sm-9 content">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Conteúdo</h3>
+              </div>
+              <div class="panel-body">
+                
+                
+
+                <div class="content-row">
+
+                  <div class="col-md-12">
+                    
+                    
+                    <h2 class="content-row-title">Pagamentos</h2>
+                    
+                    
+                    <div class="card">
+                            <div class="card-body">
+                                <div class="stat-widget-five">
+                                    <div class="stat-icon dib flat-color-1">
+                                        <i class="pe-7s-cash"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="text-left dib">
+                                            <div class="stat-text"> € <span class="count">220,00</span></div>
+                                            <div class="stat-heading">Saldo Atual</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+
+                    <h1 id="tables" class="page-header">  Multibanco </h1>
+
+                  
+                    <body class="large-screen">
+                      
+            
+                    <table>
+                    	<thead>
+                    	<tr class="table-headers">
+                        <th>Nome Participante</th>
+                        <th>Atividade</th>
+                        <th>Entidade</th>
+                        <th>Referência</th>
+                        <th>Montante (€)</th>
+                        
+                    	</tr>
+                    	</thead>
+                    	<tbody id="table-headers" >
+                        <tr>
+                          <td>Leandro</td>
+                          <td>Rafting no Douro</td>
+                          <td>23020</td>
+                          <td>356467857</td>
+                          <td>25,00</td>
+                        </tr>
+                        <tr>
+                          <td>Ana</td>
+                          <td>Rafting no Cávado</td>
+                          <td>23020</td>
+                          <td>356467858</td>
+                          <td>30,00</td>
+                        </tr>
+                        <tr>
+                          <td>André</td>
+                          <td>Rafting no Minho</td>
+                          <td>23020</td>
+                          <td>356467859</td>
+                          <td>40,00</td>
+                        </tr>
+                    	</tbody>
+                    </table>                
+                      
+  
+  
+  
+  
+  <h1 id="tables" class="page-header"> Cartão Crédito</h1>
+
+                  
+                    <body class="large-screen">
+       
+      
+                    <table>
+                    	<thead>
+                    	<tr class="table-headers">
+                        <th>Nome Participante</th>
+                        <th>Atividade</th>
+                        <th>Número do cartão</th>
+                        <th>Código Verificação</th>
+                        <th>Data Validade</th>
+                        <th>Montante (€)</th>
+                    	</tr>
+                    	</thead>
+                    	<tbody id="table-headers" >
+                        <tr>
+                          <td>Carolina</td>
+                          <td>Rafting no Ave</td>
+                          <td>1427463915374057</td>
+                          <td>257</td>
+                          <td>02/26</td>
+                          <td>40,00</td>
+                        </tr>
+                        <tr>
+                          <td>Tomé</td>
+                          <td>Rafting no Paiva</td>
+                          <td>6294629501658264</td>
+                          <td>398</td>
+                          <td>07/23</td>
+                          <td>40,00</td>
+                        </tr>
+                        <tr>
+                          <td>Balsa</td>
+                          <td>Raft</td>
+                          <td>186409371854</td>
+                          <td>185</td>
+                          <td>11/25</td>
+                          <td>45,00</td>
+                        </tr>
+                        
+                          
+                    	</tbody>
+                    </table>        
+                    
+
+              <br>
+              <br>
+                    
+                    
+
+                    
+                  </div>
+                </div>
+              </div><!-- panel body -->
+            </div>
+        </div><!-- content -->
+      </div>
+    </div>
+    <!--footer-->
+    <div class="site-footer">
+      <div class="container">
+        
+        
+        <div class="row">
+          <div class="col-md-6">
+            <h3> Contacta-nos</h3>
+            <ul>
+               <li>Envia Password: <span class="connect">raftminho1920@gmail.com</span></li>
+              <li>
+                <a title="Twitter" href="https://twitter.com" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe121"></i></a>
+                <a title="Facebook" href="https://www.facebook.com" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10b"></i></a>
+                <a title="Google+" href="https://plus.google.com/" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe110"></i></a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <hr class="dashed" />
+        <div class="copyright-clearfix">
+          <p><b>RaftMinho</b></p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+    <script type="text/javascript" src="dist/js/table.js"></script>
+    <script type="text/javascript" src="dist/js/site.min.js"></script>
+    
+</html>

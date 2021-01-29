@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RaftMinho-Admin</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon_16.ico"/>
+    <link rel="bookmark" href="favicon_16.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+ 
+    <!-- site css -->
+    <link rel="stylesheet" href="dist/css/table.css">
+    <link rel="stylesheet" href="dist/css/site.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="dist/css/eu.css">
+
+  
+  </head>
+  <body>
+    <!--nav-->
+    <nav role="navigation" class="navbar navbar-custom">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button data-target="#bs-content-row-navbar-collapse-5" data-toggle="collapse" class="navbar-toggle" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                        <a href="#" class="navbar-brand"><span class="tituloRaft">RAFT</span><span class="tituloMinho">MINHO •</span><span class="tituloAdmin"> ADMINISTRADOR</span></a>
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div id="bs-content-row-navbar-collapse-5" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+               <li class="dropdown">
+                          
+                       
+            
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <b class="glyphicon glyphicon-user"></b></a>
+            <ul role="menu" class="dropdown-menu">
+              <li class="dropdown-header">Perfil </li>
+
+              <li class="divider"></li>
+              <li class="active"><a href= "editPerfil.html" >Dados</a></li>
+              
+            </ul>
+          </li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <li class="active"></li>
+              <li class="active"></li>
+              <!-- <li class="disabled"><a href="#">Link</a></li> -->
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <b class="glyphicon glyphicon-align-justify"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li class="dropdown-header">Opções</li>
+                  
+                  <li class="divider"></li>
+                  <li class="active"><a href="https://mail.google.com/mail/u/0/#inbox" >Conta Email</a></li>
+                  <li class="divider"></li>
+                  <li class="disabled"><a href="home.html">Sair</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <!--header-->
+    <div class="container-fluid">
+    <!--documents-->
+        <div class="row row-offcanvas row-offcanvas-left">
+          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+            <ul class="list-group panel">
+                
+                
+                <li class="list-group-item"><a href="backoffice.html"><i class="glyphicon glyphicon-home"></i>Painel de Controlo </a></li>
+                <li class="list-group-item"><a href="timeline.html" ><i class="glyphicon glyphicon-indent-left"></i>Agenda</a></li>
+                <li class="list-group-item"><a href="activities.html" ><i class="glyphicon glyphicon-minus"></i>Atividades</a></li>
+                <li class="list-group-item"><a href="manager.html"><i class="glyphicon glyphicon-list-alt"></i>Gestores de Espaços</a></li>
+                <li class="list-group-item"><a href="participants.html"><i class="glyphicon glyphicon-th-list"></i>Participantes </a></li>
+                <li class="list-group-item"><a href="payments.html"><i class="glyphicon glyphicon-bell"></i>Pagamentos</li>
+                
+                
+                
+                
+                
+                
+                
+               
+                
+              </ul>
+          </div>
+          
+          
+          <div class="col-xs-12 col-sm-9 content">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a> Conteúdo</h3>
+              </div>
+              <div class="panel-body">
+                <div class="content-row">
+
+                  <h1 id="tables" class="page-header">Atividades</h1>
+                  
+                
+
+                  <!--
+                    
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped">
+                        <colgroup>
+                          <col class="col-xs-1">
+                            <col class="col-xs-7">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>Pacotes</th>
+                            <th>Descrição</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              Familiar
+                            </td>
+                            <td>Descida do rio entre 6-8 pessoas.</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Amigos
+                            </td>
+                            <td>Descida do rio para 8 amigos, 20km.</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Golden Hour
+                            </td>
+                            <td>Pacote especial com desconto.</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              ......
+                            </td>
+                            <td>.........</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              .....
+                            </td>
+                            <td>.......</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <br>
+
+                    <hr class="dashed" />
+
+                    <br>
+
+   
+
+                    <h2 class="content-row-title">Dados das Atividades</h2>
+            
+                    -->
+
+
+                 
+
+                    <body class="large-screen">
+                        <div class="wrap">
+                                         
+                          <div class="table-wrapper">
+                            <table class="table-responsive card-list-table">
+                              <thead>
+                                <tr>
+                                  <th>Nome</th>
+                                  <th>Espaço</th>
+                                  <th>Custo</th>
+                                  <th>Participantes Max </th>
+                                  <th>Dificuldade</th>
+                                  <th>Data Início </th>
+                                  <th>Data Fim </th>
+                                  <th>Estado </th>
+                                </tr>
+                              </thead>
+                              <tbody id="table-headers">
+                                
+                                
+                                
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+
+
+
+                        <br>
+                        <br>
+                        <br>
+
+
+                        <div class="col-md-3 col-md-17">
+                          <!-- <button type="button" class="btn btn-block">Adicionar Atividade</button> -->
+
+
+                        </div>
+
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                          Criar Atividade
+                        </button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">Apagar Atividade</button>
+
+
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">NOVA ATIVIDADE</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <br>
+                                <form>
+                                <div class="modal-body">
+                                    <label>Nome:</label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="text" placeholder="" id="inputNome" onfocus="validatorNome()" required>
+                                        <div id="controlNome"></div>
+                                      </div>
+                                    <br>
+                                    
+                                    <label>Espaço:</label>
+                                    <div class="form-group" >
+                                        <select required id="inputCriarEspaco" class="form-control">
+                                        </select>
+                                      </div>
+                                    <br>
+                                   
+                                    <label>Custo:</label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="text" placeholder="" id="inputCusto" onfocus="validatorCusto()" required>
+                                        <div id="controlCusto"></div>
+                                      </div>
+                                    <br>
+                                    
+                                    <label>Participantes Max :</label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="text" placeholder="" id="inputParticipantes" onfocus="validatorParticipantes5454()" required>
+                                        <div id="controlParticipantes"></div>
+                                      </div>
+                                    <br>
+                                    
+                                    <label>Dificuldade: </label>
+                                    <div class="form-group">
+                                        <select class="form-control input-lg" type="text" placeholder="" id="inputDificuldade" required>
+                                          <option value=0>Fácil</option>
+                                          <option value=1>Difícil</option>
+                                        </select>
+                                      </div>
+                                    <br>
+                                    
+                                    <label>Data Início:</label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="date" placeholder="" id="inputDataInicio" required>
+                                      </div>
+                                    <br>
+                                    
+                                    <label>Data Fim: </label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="date" placeholder="" id="inputDataFim" required>
+                                      </div>
+                                    <br>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                  <button type="button" class="btn btn-primary" onclick="addAtividade()">Salvar</button>
+                                </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+
+                    
+                          <div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdate" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Editar ATIVIDADE</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <br>
+                                <div class="modal-body">
+                                  
+                                    <label>Nome:</label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="text" placeholder="" id="inputNome1">
+                                      </div>
+                                    <br>
+                                    
+                                    <label>Espaço:</label>
+                                    <div class="form-group" >
+                                        <select required id="inputEditarEspaco" class="form-control">
+                                        </select>
+                                      </div>
+                                    <br>
+                                   
+                                    <label>Custo:</label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="text" placeholder="" id="inputCusto1">
+                                      </div>
+                                    <br>
+                                    
+                                    <label>Participantes Max :</label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="text" placeholder="" id="inputParticipantes1">
+                                      </div>
+                                    <br>
+                                    
+                                    <label>Dificuldade: </label>
+                                    <div class="form-group">
+                                        <select class="form-control input-lg" type="text" placeholder="" id="inputDificuldade1" required>
+                                          <option value=0>Fácil</option>
+                                          <option value=1>Difícil</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    
+                                    <label>Data Início:</label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="date" placeholder="" id="inputDataInicio1">
+                                      </div>
+                                    <br>
+                                    
+                                    <label>Data Fim: </label>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" type="date" placeholder="" id="inputDataFim1">
+                                      </div>
+                                    <br>
+
+
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                  <button type="button" class="btn btn-primary" onclick="updateAtividade()">Salvar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          
+                          <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDelete" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">APAGAR ATIVIDADE</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+
+                                  <br>
+
+
+                                <div class="modal-body">
+                                  
+                                    <label>Atividade</label>:</label>
+                                    <div class="form-group" >
+                                        <select required id="inputDelete">
+                                        </select>
+                                      </div>
+                                    <br>
+
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                  <button type="button" class="btn btn-primary" onclick="deleteAtividade()">Apagar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </body>   
+
+
+
+                <!--   
+                  <div class="content-row">
+                      <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>#</th>
+                                <th>Nome</th>
+                                <th>Espaço</th>
+                                <th>Custo</th>
+                                <th>NºParticipantes</th>
+                                
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Familiar</td>
+                                <td>Douro</td>
+                                <td>100€</td>
+                                <td>50</td>
+                                
+                                
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Amigos</td>
+                                <td>Támega</td>
+                                <td>250€</td>
+                                <td>100</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Golden Hour</td>
+                                <td>Douro</td>
+                                <td>200€</td>
+                                <td>80</td>
+                                
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                  </div>
+                -->  
+
+
+
+
+
+                </div>
+                <div class="clearfix"></div>
+                <br><br><br>
+              </div><!-- panel body -->
+            </div>
+        </div><!-- content -->
+      </div>
+    </div>
+    <!--footer-->
+    <div class="site-footer">
+      <div class="container">
+        
+        
+        <div class="row">
+          <div class="col-md-6">
+            <h3> Contacta-nos</h3>
+            <ul>
+               <li>Envia Email: <span class="connect">raftminho1920@gmail.com</span></li>
+              <li>
+                <a title="Twitter" href="https://twitter.com" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe121"></i></a>
+                <a title="Facebook" href="https://www.facebook.com" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10b"></i></a>
+                <a title="Google+" href="https://plus.google.com/" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe110"></i></a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <hr class="dashed" />
+        <div class="copyright-clearfix">
+          <p><b>RaftMinho</b></p>
+        </div>
+      </div>
+    </div>
+    
+  <script type="text/javascript" src="dist/js/atividades.controller.js"></script>
+
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  
+  <script type="text/javascript" src="dist/js/table.js"></script>
+  <script type="text/javascript" src="dist/js/site.min.js"></script>
+    
+  </body>
+
+ 
+</html>

@@ -1,0 +1,51 @@
+.btn_12{
+	background-color: #ffffff !important;
+	color: #1f5673 !important;
+	font-family: 'Basic' !important;
+	font-weight : bold !important;
+	font-size : 185% !important;
+}
+.btn_12:hover{
+		color: #97dbcf !important;
+}
+.nav-link{
+	color: #73716d !important;
+	font-family: 'Basic' !important;
+	font-weight : normal !important;
+	font-size : 150% !important;
+}
+.nav-link:hover{
+		color: #97dbcf !important;
+		}
+.client_review .owl-nav button{
+	background-color: #1f5673 !important;
+	color: #ffffff !important;
+}
+.place_btn{
+	background-color: #97dbcf !important;
+	color: #ffffff !important;
+	display: inline-block;
+    padding: 10px 25px;
+	text-transform: capitalize;
+    margin-bottom: 14px;
+}
+.place_btn:hover{
+	background-color: #73716d !important;
+}
+.pacotes_btn{
+	background-color: rgba(255, 255, 255, 0.5) !important;
+	color: #1f5673 !important;
+	display: inline-block;
+    padding: 10px 15px;
+	text-transform: capitalize;
+    margin-bottom: 5%;
+	font-weight: bold;
+	font-size : 120% !important;
+}
+.pacotes_btn:hover{
+	background-color: #73716d !important;
+	color: #ffffff !important;
+}
+
+
+	
